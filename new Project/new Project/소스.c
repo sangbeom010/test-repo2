@@ -16,3 +16,14 @@ int flag[N + 1]; //최단거리가 확정된 정점(노드)
 int dist[N + 1]; //최단거리값을 저장할 배열
 
 int i, j, k, min, position;
+
+//방향 가중치 그래프의 인접행렬
+int data[N + 1][N + 1] = {
+    {0, 0, 0, 0, 0, 0, 0,},
+    {0, 0, 2, INF, 3, INF, INF},
+    {0, INF, 0, 4, 1, 7, INF},
+    {0, INF, INF, 0, 4, 1, 3},
+    {0, INF, 2, 2, 0, 1, INF},
+    {0, INF, INF, 1, INF, 0, 6},
+    {0, INF, 3, INF, 8, INF, 0}
+};
