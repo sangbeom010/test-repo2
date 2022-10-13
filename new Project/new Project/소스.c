@@ -89,5 +89,6 @@ int main() {
             if (shortest_nodes[i] == INF || shortest_nodes[i] == 0) continue;
             printf(", %d", shortest_nodes[i]);
         }
+        printf("\n\n");
     }
 }
