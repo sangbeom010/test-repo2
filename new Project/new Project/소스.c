@@ -83,5 +83,6 @@ int main() {
         idx++;
         //DFS 알고리즘을 활용한 모든 경로와 거리 출력
         printf("> Node: %d, All paths\n", i);
+        DFS(1, i);
     }
 }
