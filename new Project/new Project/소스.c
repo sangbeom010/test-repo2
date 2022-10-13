@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 1001
+#define MAX 1002
 #define N 6      //정점의 갯수
 #define INF 9999 //무한대 표시
 
