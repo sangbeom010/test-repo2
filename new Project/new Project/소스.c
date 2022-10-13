@@ -52,6 +52,17 @@ int main() {
                 position = j;
             }
         }
+        printf("selected Vmin is %d node  ", position);
+
+        //선택된 Vmin을 확정
+        flag[position] = 1;
+
+        //D배열 갱신
+        for (j = 1; j <= N; j++) {
+            if (dist[j] > data[position][j] + dist[position] && data[position][j] != INF) {
+                dist[j] = data[position][j] + dist[position];
+            }
+        }
 
 
 }
