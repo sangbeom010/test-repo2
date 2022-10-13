@@ -92,3 +92,11 @@ int main() {
         printf("\n\n");
     }
 }
+
+
+void DFS(int start_node, int dest_node) {
+    int there, sum_dist, path_cnt;
+
+    visited[start_node] = 1; //경로 방문 체크용
+
+}
