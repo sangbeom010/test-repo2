@@ -27,3 +27,14 @@ int data[N + 1][N + 1] = {
     {0, INF, INF, 1, INF, 0, 6},
     {0, INF, 3, INF, 8, INF, 0}
 };
+
+int main() {
+    dist[1] = 0;
+    flag[1] = 1;
+
+    for (i = 2; i <= N; i++) {
+        flag[i] = 0;
+        dist[i] = data[1][i];
+    }
+
+}
