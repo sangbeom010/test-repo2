@@ -122,6 +122,18 @@ void DFS(int start_node, int dest_node) {
         }
     }
     else {
+        for (int i = 1; i <= N; i++) {
+            if (data[start_node][i] > 0 && data[start_node][i] != INF) {
+                there = i;
+                if (visited[there] == 0) {
+                    visited[there] = 1;
+                    nodes[idx] = there; idx += 1;
+                    DFS(there, dest_node);
+                    visited[there] = 0;
+                    idx -= 1;
+                }
+            }
+        }
 
     }
 }
