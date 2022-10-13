@@ -99,4 +99,9 @@ void DFS(int start_node, int dest_node) {
 
     visited[start_node] = 1; //경로 방문 체크용
 
+    if (start_node == dest_node) {
+    }
+    else {
+
+    }
 }
