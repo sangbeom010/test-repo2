@@ -84,5 +84,10 @@ int main() {
         //DFS 알고리즘을 활용한 모든 경로와 거리 출력
         printf("> Node: %d, All paths\n", i);
         DFS(1, i);
+        printf("## 1~%d: distance = %d, path: %d", i, dist[i], shortest_nodes[1]);
+        for (int i = 2; i <= N; i++) {
+            if (shortest_nodes[i] == INF || shortest_nodes[i] == 0) continue;
+            printf(", %d", shortest_nodes[i]);
+        }
     }
 }
