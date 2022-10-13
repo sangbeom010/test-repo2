@@ -112,6 +112,14 @@ void DFS(int start_node, int dest_node) {
         }
         //각 경로의 거리 출력
         printf(" (distance = %d) \n", sum_dist);
+        if (min_dist >= sum_dist && min_path >= path_cnt) {
+            min_dist = sum_dist;
+            min_path = path_cnt;
+            for (int i = 1; i <= idx - 1; i++) {
+                shortest_nodes[i] = nodes[i];
+                shortest_nodes[i + 1] = INF;
+            }
+        }
     }
     else {
 
