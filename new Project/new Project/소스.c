@@ -100,6 +100,18 @@ void DFS(int start_node, int dest_node) {
     visited[start_node] = 1; //경로 방문 체크용
 
     if (start_node == dest_node) {
+        sum_dist = 0; path_cnt = 0;
+        //모든 경로 출력(최초 노드도 표기)
+        for (int i = 1; i <= idx - 1; i++) {
+            if (i == 1) printf("%d", nodes[i]);
+            else        printf(", %d", nodes[i]);
+
+            if (i != idx - 1)
+                sum_dist += data[nodes[i]][nodes[i + 1]];
+            path_cnt += 1;
+        }
+        //각 경로의 거리 출력
+        printf(" (distance = %d) \n", sum_dist);
     }
     else {
 
