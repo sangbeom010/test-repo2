@@ -37,4 +37,12 @@ int main() {
         dist[i] = data[1][i];
     }
 
+    printf("초기상태의 D배열 출력: \n");
+    for (k = 1; k <= N; k++) {
+        printf("Dist[%d]:%d, ", k, dist[k]);
+    }
+    printf("\n");
+
+
+
 }
