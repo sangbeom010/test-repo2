@@ -63,6 +63,10 @@ int main() {
                 dist[j] = data[position][j] + dist[position];
             }
         }
+        for (k = 1; k <= N; k++) {
+            printf("Dist[%d]:%d, ", k, dist[k]);
+        }
+    }
 
 
 }
