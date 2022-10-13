@@ -77,6 +77,11 @@ int main() {
             nodes[j] = 0;
             visited[j] = 0;
         }
-
+        min_path = INF; min_dist = INF;
+        idx = 1;
+        nodes[idx] = 1;
+        idx++;
+        //DFS 알고리즘을 활용한 모든 경로와 거리 출력
+        printf("> Node: %d, All paths\n", i);
     }
 }
