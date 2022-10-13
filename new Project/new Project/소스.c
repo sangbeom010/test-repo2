@@ -42,7 +42,16 @@ int main() {
         printf("Dist[%d]:%d, ", k, dist[k]);
     }
     printf("\n");
-
+    for (i = 1; i < N; i++) { // N-1번 반복
+        printf("\n");
+        min = INF;
+        //Vmin 찾기
+        for (j = 1; j <= N; j++) {
+            if (min > dist[j] && flag[j] == 0) {
+                min = dist[j];
+                position = j;
+            }
+        }
 
 
 }
